@@ -1,6 +1,3 @@
-import scala.collection.immutable
-import scala.collection.mutable.Buffer
-
 /**
   * https://www.hackerrank.com/challenges/big-sorting/problem
   *
