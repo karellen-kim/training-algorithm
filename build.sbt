@@ -1,4 +1,4 @@
-name := "training-hackerrank"
+name := "training-algorithm"
 
 version := "0.1"
 
