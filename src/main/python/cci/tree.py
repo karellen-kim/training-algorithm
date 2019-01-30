@@ -34,6 +34,66 @@ __print__(hasTrace(root, root.children[1].children[1]))
 __print__(hasTrace(root.children[1], root.children[1].children[1]))
 
 utils.__Title__("4.2 최소 트리 : 오름차순 정렬된 중복없는 배열. 이 배열 값으로 만드는 높이가 최소인 트리")
+class BinaryTreeNode :
+    def __init__(self, value):
+        self.value = value
+        self.left = None
+        self.right = Node
+
+def createBTNode(value) :
+    node = BinaryTreeNode(value)
+    return node
+
+def getDepth(node, depth = 0) :
+    if node == None :
+        return depth
+    d1 = getDepth(node.left, depth + 1)
+    d2 = getDepth(node.right, depth + 1)
+
+    return max(d1, d2)
+
+def printTree(node) :
+    indent = getDepth(root)
+    q = deque()
+    q.append([node])
+
+    while q :
+        nodes = q.pop()
+        space = ['  ' for i in range(indent)]
+        nodeValues = [str(node.value) for node in nodes]
+        print("%s%s" % ("".join(space), '  '.join(nodeValues)))
+
+        child = []
+        for node in nodes :
+            if node.left != None :
+                child.append(node.left)
+            if node.right != None :
+                child.append(node.right)
+        if len(child) != 0 :
+            q.append(child)
+        indent = indent - 1
+
+def createBST(list) :
+    # find Mid and create node
+    # createBST with reft list side
+    # createBST with right list side
+    # append two child to current node
+    if len(list) == 0 :
+        return None
+
+    mid = len(list) // 2
+    currentNode = createBTNode(list[mid])
+
+    leftNode = createBST(list[:mid])
+    rightNode = createBST(list[mid+1:])
+
+    currentNode.left = leftNode
+    currentNode.right = rightNode
+    return currentNode
+
+list = [1,2,3,4,5,6,7,8]
+root = createBST(list)
+printTree(root)
 
 utils.__Title__("4.3 이진 트리에서 같은 깊이에 있는 노드를 연결 리스트로 연결. (깊이가 N이면 N개의 연결리스트)")
 
