@@ -151,7 +151,7 @@ def rotate_v1(matrix) :
 def printMatrix(matrix) :
     for i in range(len(matrix)) :
         for j in range(len(matrix[i])) :
-            print(matrix[i][j], end = ' ')
+            print(matrix[i][j] + ' ')
         print('')
 
 matrix = [[1,2,3,4],

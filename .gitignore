@@ -2,3 +2,6 @@
 .idea
 target
 past/
+venv/
+python.iml
+__pycache__
