@@ -73,6 +73,9 @@ class Solution(TimeLimitExceededSolution) :
         currentCost = self.getCost(index)
         currentStopCount = self.getStopCount(index)
 
+        if currentStopCount > self.K :
+            return
+
         for nextStop in self.connectedFlights[index] :
             nextStopIndex = nextStop[0]
             if self.visited[nextStopIndex] == False :
@@ -82,6 +85,7 @@ class Solution(TimeLimitExceededSolution) :
                 if currentStopCount <= self.K and (self.getCost(nextStopIndex) == self.NOT_FOUND or self.getCost(nextStopIndex) > totalCost) :
                     self.setCost(nextStopIndex, totalCost, currentStopCount + 1)
                 self.search(nextStopIndex)
+        self.visited[index] = False
 
     def setCost(self, index, cost, stopCount):
         self.costs[index] = [cost, stopCount]
@@ -98,5 +102,8 @@ solutionV2 = Solution()
 #                                  , 13, 4, 13)
 print(cost)
 
-cost = solutionV2.findCheapestPrice(3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 0)
+#cost = solutionV2.findCheapestPrice(3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 0)
+print(cost)
+
+cost = solutionV2.findCheapestPrice(4, [[0,1,1],[0,2,5],[1,2,1],[2,3,1]], 0, 3, 1)
 print(cost)
