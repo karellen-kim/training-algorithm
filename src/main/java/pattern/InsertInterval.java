@@ -1,4 +1,4 @@
-package pattern.interval;
+package pattern;
 
 import com.sun.tools.javac.util.Pair;
 

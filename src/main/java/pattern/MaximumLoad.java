@@ -1,6 +1,4 @@
-package pattern.interval;
-
-import com.sun.tools.javac.util.Pair;
+package pattern;
 
 import java.util.Arrays;
 import java.util.Comparator;

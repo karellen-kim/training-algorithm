@@ -1,4 +1,4 @@
-package pattern.merge;
+package pattern;
 
 import com.sun.tools.javac.util.Pair;
 

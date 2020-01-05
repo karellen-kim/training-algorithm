@@ -1,9 +1,10 @@
-package pattern.window;
+package pattern;
 
 /**
  * @author karellen
  */
-public class FruitsBaskets {
+public class LongestSubstring {
+
     /**
      * k개의 다른 문자열이 있는 가장긴 str를 반환한다
      */

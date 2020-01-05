@@ -3,17 +3,21 @@
 #### Leet Code
 * [python](./src/main/python/leetcode)
 
-#### Geeks For Geeks
-* [python](./src/main/python/geeksforgeeks)
+#### Algorithm Patterns
+* [java](./src/main/java/pattern)
 
 #### Cracking The Coding Interview
 * [python](./src/main/python/cci)
 
-#### Algorithm Patterns
-* [java](./src/main/java/pattern/window)
+#### Programmers
+* [python](./src/main/python/programmers)
 
 #### Hacker Rank
-* [scala](./src/main/scala/hackerrank)
 * [python](./src/main/python/hackerrank)
+* [scala](./src/main/scala/hackerrank)
+
+#### Geeks For Geeks
+* [python](./src/main/python/geeksforgeeks)
+
 
 

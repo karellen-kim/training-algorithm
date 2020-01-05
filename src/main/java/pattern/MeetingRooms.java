@@ -1,4 +1,4 @@
-package pattern.interval;
+package pattern;
 
 import com.sun.tools.javac.util.Pair;
 import utils.ArrayUtils;
@@ -65,7 +65,7 @@ public class MeetingRooms {
         System.out.println(findMinimumMeetingRoomCount(
                 ArrayUtils.convertToPair(new int[][]{{ 6, 7 }, { 2, 4 },  { 8, 12 }}) // 1
         ));
-        System.out.pri9ntln(findMinimumMeetingRoomCount(
+        System.out.println(findMinimumMeetingRoomCount(
                 ArrayUtils.convertToPair(new int[][]{{ 1, 4 }, { 2, 5 }, { 7, 9 }}) // 2
         ));
         System.out.println(findMinimumMeetingRoomCount(
