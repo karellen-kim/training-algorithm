@@ -8,8 +8,6 @@ class Solution(object):
         map = {}
         for word in words :
             map[word] = map.get(word, 0) + 1
-
-        list = [0 for range(0, len(map))]
         for word in map :
             map[word]
 
